@@ -1,0 +1,97 @@
+.auth__main {
+    align-items: center;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vh;
+}
+
+.auth__box-container {
+    background-color: white;
+    box-shadow: 0px 3px $dark-grey;
+    border-radius: 2px;
+    padding: 20px;
+    width: 250px;
+}
+
+.auth__title {
+    color: darken($color: $primary, $amount: 20);
+    margin-bottom: 20px;
+}
+
+.auth__input {
+    border: 0px;
+    border-bottom: 1px solid $light-grey;
+    color: $dark-grey;
+    font-size: 15px;
+    height: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: border-bottom .3s ease;
+
+    &:focus {
+        border-bottom: 1px solid $primary;
+        outline: none;
+    }
+}
+
+.auth__social-network {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.auth__alert-error {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+@keyframes auth__fadeInUp {
+    from {
+        transform: translate3d(0,10px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes auth__fadeInUp {
+    from {
+        transform: translate3d(0,10px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.auth__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.auth__animatedFadeInUp {
+    opacity: 0
+}
+
+.auth__fadeInUp {
+    opacity: 0;
+    animation-name: auth__fadeInUp;
+    -webkit-animation-name: auth__fadeInUp;
+}
