@@ -14,4 +14,6 @@ export const Constants = {
     notesFileUrl: '[Notes] Update image URL',
     notesDelete: '[Notes] Delete note',
     notesLogOutCleaning: '[Notes] LogOut Cleaning',
+
+    fireBaseTestEnvironment: 'test',
 }

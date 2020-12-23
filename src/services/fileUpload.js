@@ -20,7 +20,8 @@ export const fileUpload = async ( file ) => {
             return cloudyResponse.secure_url;
         } else {
 
-            throw await response.json();
+            // throw await response.json();
+            return null;
         }
         
     } catch (error) {

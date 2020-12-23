@@ -1,5 +1,13 @@
 import { Constants } from '../services/constants';
 
+/*
+
+    {
+        uid: 'aaf8afa8f798ehbj',
+        name: Aldo
+    }
+
+ */
 
 export const authReducer = ( state = {}, action ) => {
    
